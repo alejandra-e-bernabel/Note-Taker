@@ -1,0 +1,28 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "An application that can be used to write and save notes. This application uses an Express.js back end and will save and retrieve note data from a JSON file.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandra-e-bernabel/Note-Taker.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "heroku"
+  ],
+  "author": "Alejandra Bernabel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandra-e-bernabel/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/alejandra-e-bernabel/Note-Taker#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
