@@ -24,6 +24,7 @@
   "homepage": "https://github.com/alejandra-e-bernabel/Note-Taker#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "lowdb": "^6.0.1",
     "uuid": "^9.0.1"
   }
 }
