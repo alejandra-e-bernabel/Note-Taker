@@ -23,12 +23,44 @@ app.get("/notes", (req, res) =>
 );
 
 app.get("/api/notes", (req, res) => {
-    res.json(noteData);
-})
+    fs.readFile("./db/db.json", "utf-8", (err, data) => {
+        if (err) throw err;
+ 
+        const noteData = JSON.parse(data);
+        res.json(noteData);
+      });
+});
 
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/index.html"))
 });
+
+app.delete("/api/notes/:id", (req, res) => {
+    fs.readFile("./db/db.json", "utf-8", (err, data) => {
+        if (err) throw err;
+
+        const deleteID = req.params.id;
+        let currentNotes = JSON.parse(data);
+
+        for (let i=0; i<currentNotes.length; i++) {
+            if (deleteID === currentNotes[i].id) {
+                currentNotes.splice(i, 1);
+            }
+        };
+
+        currentNotes = JSON.stringify(currentNotes);
+
+        res.send("Note has been deleted");
+
+        fs.writeFile(`./db/db.json`, currentNotes, (err) =>
+            err
+                ? console.error(err)
+                : console.log(
+                    "object deleted"
+                )
+        );
+    })
+})
 
 
 // * `POST /api/notes` should receive a new note to save on the request body, 
@@ -66,8 +98,6 @@ app.post("/api/notes", (req, res) => {
                     )
             );
         })
-
-
     }
 
     else {
