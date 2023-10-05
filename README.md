@@ -1,11 +1,17 @@
 # Note-Taker
-IT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[(https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
 An application that can be used to write and save notes. This application uses an Express.js back end and will save and retrieve note data from a JSON file.
 
+## Github Repository
 
+https://github.com/alejandra-e-bernabel/Note-Taker
+
+## Heroku Deployed File
+
+https://alejandra-note-taker-52375894909d.herokuapp.com/notes
 
 ## Table of Contents
 
@@ -13,13 +19,16 @@ An application that can be used to write and save notes. This application uses a
 - [Usage](#usage)
 - [License](#license)
 - [Questions](#questions?)
-- [Test](#tests)
 
 ## Installation and Dependencies
 
-The necessary applications to run this program are:
+Dependencies: express, uuid (install dependencies using commands npm i express and npm i uuid).
 
-Launch application using npm start. In your broser, go to ________________________ to view application.
+![Note taker, no notes](image.png)
+
+![Sample notes](image-1.png)
+
+Launch application using npm start in command line. In your broser, go to https://alejandra-note-taker-52375894909d.herokuapp.com/notes to view deployed application.
 
 ## Usage
 
@@ -35,7 +44,3 @@ If you have questions or have notived a bug in this code, please reach out to Al
 
 Email: alejandra-e-bernabel@gmail.com
 GitHub: alejandra-e-bernabel
-
-## Tests 
-
-To test this code, follow these steps:
