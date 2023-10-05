@@ -22,7 +22,7 @@
     "url": "https://github.com/alejandra-e-bernabel/Note-Taker/issues"
   },
   "homepage": "https://github.com/alejandra-e-bernabel/Note-Taker#readme",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.18.2",
     "uuid": "^9.0.1"
   }
