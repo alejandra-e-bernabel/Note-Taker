@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 // call using uuidv4();
 
 //listening on port 3001
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
